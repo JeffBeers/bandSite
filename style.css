@@ -12,15 +12,16 @@
 
 }
 
-/* Nav here */
-.container {
-    max-width: 1280px;
+/* NAV */
+.navContainer {
+    width: 100%;
     margin: 0 auto;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 
 nav {
     position: fixed;
@@ -146,12 +147,45 @@ nav {
 
 
 
-/* Home Page */
+/* HOME PAGE */
 
 #mainLogo {
-    width: 100%;
+    width: 80%;
+    display: block;
+    margin: 50px auto auto auto;
 } 
 
+/* ABOUT PAGE */
+.aboutMain {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.bioP {
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-top: 50px;
+    justify-self: center;
+}
+
+#aboutPic {
+    width: 100%;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
 
 
 /*MEDIUM SIZE Tablet Media Query */
