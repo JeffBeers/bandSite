@@ -9,7 +9,7 @@ hamburger.addEventListener('click', function () {
     mobile_menu.classList.toggle('is-open');
 });
 
-//GALLERY SLIDESHOW
+//PHOTOS SLIDESHOW
 let i = 0; // 0-based index. start point.
 let images = ['imgGallery/olrb1.JPG', 
               'imgGallery/olrb2.JPG', 
@@ -40,3 +40,20 @@ function changeImg() {
   } 
 
 window.onload = changeImg; //this runs the changeImg unction as soon as page loads (onload).
+
+//VIDEOS 
+fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCYfyw_5yG6dWNfMiWpMo3XA&maxResults=5&order=date&key=AIzaSyCkkwFVC5lNa01jEz-WMejSqXb547LSD9o")
+  .then((result)=>{
+    return (result.json())
+  }).then((data)=>{
+    console.log(data)
+    let videos = data.items
+    let videoContainer = document.querySelector(".youtube-container")
+    for(video of videos){
+      let videoUrl = `https://www.youtube.com/watch?v=${video.id.videoId}`
+      videoContainer.innerHTML += `
+        <img src="${video.snippet.thumbnails.high.url}">
+        <p>${video.snippet.title}</p>
+      `
+    }
+  })
