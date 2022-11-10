@@ -9,6 +9,35 @@ hamburger.addEventListener('click', function () {
     mobile_menu.classList.toggle('is-open');
 });
 
+//COUNDTOWN
+
+/*
+const countdown = () => {
+  const countDate = new Date('April 1, 2023 00:00:00').getTime();
+  const currentDate = new Date().getTime();
+  const gap = countDate - currentDate;
+
+  const seconds = 1000;
+  const minutes = seconds * 60;
+  const hours = minutes * 60;
+  const days = hours * 24;
+
+const textDays = Math.floor(gap / days); //math.floor rounds to nearest number
+const textHours = Math.floor((gap % days) / hours);
+const textMinutes = Math.floor((gap % hours) / minutes);
+const textSeconds = Math.floor((gap % minutes) / seconds);
+
+document.querySelector('.days').innerText = textDays;
+document.querySelector('.hours').innerText = textHours;
+document.querySelector('.minutes').innerText = textMinutes;
+document.querySelector('.seconds').innerText = textSeconds;
+};
+
+countdown();
+setInterval(countdown, 1000);
+
+*/
+
 //PHOTOS SLIDESHOW
 let i = 0; // 0-based index. start point.
 let images = ['imgGallery/olrb1.JPG', 
@@ -57,3 +86,30 @@ fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=U
       `
     }
   })
+
+
+  //COUNTDOWN
+
+  const countdown = () => {
+    const releaseDate = new Date('April 1, 2023 00:00:00').getTime();
+    const currentDate = new Date().getTime();
+    const gap = releaseDate - currentDate;
+  
+    const seconds = 1000;
+    const minutes = seconds * 60;
+    const hours = minutes * 60;
+    const days = hours * 24;
+  
+  const textDays = Math.floor(gap / days); //math.floor rounds to nearest number
+  const textHours = Math.floor((gap % days) / hours);
+  const textMinutes = Math.floor((gap % hours) / minutes);
+  const textSeconds = Math.floor((gap % minutes) / seconds);
+  
+  document.querySelector('.days').innerText = textDays;
+  document.querySelector('.hours').innerText = textHours;
+  document.querySelector('.minutes').innerText = textMinutes;
+  document.querySelector('.seconds').innerText = textSeconds;
+  };
+  
+  countdown();
+  setInterval(countdown, 1000);

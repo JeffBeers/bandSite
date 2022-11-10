@@ -144,16 +144,40 @@ nav {
 }
 
 
-
-
-
 /* HOME PAGE */
 
+    /* Countdown */
+
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.albumRelease {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+ 
 #mainLogo {
-    width: 80%;
+    width: 70%;
     display: block;
-    margin: 50px auto auto auto;
-} 
+    justify-content: 0 auto auto auto;
+}
 
 /* ABOUT PAGE */
 .aboutMain {
