@@ -2,6 +2,8 @@
     --primary: #00026681;
     --light: white;
     --dark: rgb(162, 162, 162);
+    --blue: rgb(57, 57, 138);
+    --red: rgb(185, 62, 49);
 }
 
 *{
@@ -154,7 +156,7 @@ nav {
 
 h1 {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     padding: 15px;
@@ -164,7 +166,7 @@ h1 {
 .albumRelease {
     display: flex;
     flex-direction: column;
-    color: rgb(57, 57, 138);
+    color: var(--blue);
     border-style: double;
     border-color: rgb(185, 62, 49);
     margin-left: 10px;
@@ -185,12 +187,24 @@ h1 {
 #mainLogo {
     width: 65%;
     display: block;
-    margin: 0 auto;
-    margin-top: 25px;
+    margin: 25px auto;
 }
 
 /* ABOUT PAGE */
+
+.aboutBody {
+    background-color: aliceblue;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: var(--blue);
+}
+
 .aboutMain {
+    margin-top: 80px;
     display: flex;
     justify-content: center;
 }
@@ -207,6 +221,8 @@ h1 {
 
 #aboutPic {
     width: 100%;
+    border: solid 2px var(--red);
+    border-radius: 5px;
 }
 
 
@@ -259,13 +275,17 @@ h1 {
 
     #mainLogo {
         width: 50%;
-        margin-top: 20px;
-        margin-bottom: -35px;
+        margin: 20px auto -35px auto;
     }
 
     .albumRelease {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin: 0 50px 0 50px;
+        }
+
+    /* ABOUT MEDIUM */
+
+    .aboutContent {
+        margin: 0 50px 0 50px;
     }
 }
 
@@ -279,16 +299,20 @@ h1 {
     }
 
     #mainLogo {
-        margin-top: 0px;
-        margin-bottom: -75px;
+        margin: 0 auto -75px auto;
     }
 
     .albumRelease {
-        margin-left: 150px;
-        margin-right: 150px;
+        margin: 0 150px 0 150px;
     }
 
     h1 {
         font-size: 40px;
+    }
+
+    /* ABOUT LARGE */
+
+    .aboutContent {
+        margin: 0 150px 0 150px;
     }
 }
