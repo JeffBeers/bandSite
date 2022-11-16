@@ -9,34 +9,6 @@ hamburger.addEventListener('click', function () {
     mobile_menu.classList.toggle('is-open');
 });
 
-//COUNDTOWN
-
-/*
-const countdown = () => {
-  const countDate = new Date('April 1, 2023 00:00:00').getTime();
-  const currentDate = new Date().getTime();
-  const gap = countDate - currentDate;
-
-  const seconds = 1000;
-  const minutes = seconds * 60;
-  const hours = minutes * 60;
-  const days = hours * 24;
-
-const textDays = Math.floor(gap / days); //math.floor rounds to nearest number
-const textHours = Math.floor((gap % days) / hours);
-const textMinutes = Math.floor((gap % hours) / minutes);
-const textSeconds = Math.floor((gap % minutes) / seconds);
-
-document.querySelector('.days').innerText = textDays;
-document.querySelector('.hours').innerText = textHours;
-document.querySelector('.minutes').innerText = textMinutes;
-document.querySelector('.seconds').innerText = textSeconds;
-};
-
-countdown();
-setInterval(countdown, 1000);
-
-*/
 
 //PHOTOS SLIDESHOW
 let i = 0; // 0-based index. start point.
@@ -71,25 +43,24 @@ function changeImg() {
 window.onload = changeImg; //this runs the changeImg unction as soon as page loads (onload).
 
 //VIDEOS 
-fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCYfyw_5yG6dWNfMiWpMo3XA&maxResults=5&order=date&key=AIzaSyCkkwFVC5lNa01jEz-WMejSqXb547LSD9o")
+/*
+fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCYfyw_5yG6dWNfMiWpMo3XA&maxResults=5&order=date&key=AIzaSyCPWe2EhTL0CIZ_JM5J2T8-iq1ktY3vi-w")
   .then((result)=>{
-    return (result.json())
+    return result.json()
   }).then((data)=>{
     console.log(data)
     let videos = data.items
-    let videoContainer = document.querySelector(".youtube-container")
+    let videosContainer = document.querySelector(".youtubeContainer")
     for(video of videos){
-      let videoUrl = `https://www.youtube.com/watch?v=${video.id.videoId}`
-      videoContainer.innerHTML += `
+        videosContainer.innerHTML += `
         <img src="${video.snippet.thumbnails.high.url}">
         <p>${video.snippet.title}</p>
       `
     }
   })
+*/
 
-
-  //COUNTDOWN
-
+  // COUNTDOWN
   const countdown = () => {
     const releaseDate = new Date('April 1, 2023 00:00:00').getTime();
     const currentDate = new Date().getTime();
@@ -113,3 +84,4 @@ fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=U
   
   countdown();
   setInterval(countdown, 1000);
+  
