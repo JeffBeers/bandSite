@@ -256,6 +256,12 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 75px auto auto auto;
+    color: var(--blue);
+}
+
+.videosP {
+    font-size: 20px;
 }
 
 .youtubeContainer {
