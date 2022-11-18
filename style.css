@@ -168,10 +168,8 @@ h1 {
     color: var(--blue);
     border-style: double;
     border-color: rgb(185, 62, 49);
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 20px 20px 20px;
     border-radius: 50px;
-    margin-bottom: 20px;
 }
 
 .countdown {
@@ -211,17 +209,15 @@ h3 {
 .aboutContent {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 15px;
 }
 
-.bioP {
-    margin-bottom: 10px;
-}
 
 #aboutPic {
     width: 100%;
     border: solid 2px var(--red);
     border-radius: 5px;
+    margin-top: 15px;
 }
 
 
@@ -260,7 +256,7 @@ h4 {
 }
 
 .videosP {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .youtubeContainer {
@@ -271,9 +267,7 @@ h4 {
 /* CONTACT */
 
 #overlay {
-    width: 100%;
-    height: 100%;
-    
+  margin-top: -30px;
 }
 
 form {
@@ -288,20 +282,31 @@ form {
     border-color: var(--blue);
 }
 
+.contactHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+}
+
 h5 {
     font-size: 40px;
-    margin: 0;
-    text-align: center;
+    margin-top: 0;
     color: var(--blue);
+}
+
+#stampLogo {
+    width: 40%;
+    margin-top: -20px;
 }
 
 label {
     display: block;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 input, textarea {
-    width: 65%;
+    width: 60%;
     padding-bottom: 10px;
     box-sizing: border-box;
     outline: none;

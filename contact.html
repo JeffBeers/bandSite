@@ -46,8 +46,12 @@
     <main>
         <div id="overlay">
             <form>
+                <div class="contactHeader">
                 <h5>Contact Us!</h5>
-
+                <img id="stampLogo" src="img/logo2.png" alt="Old Lou's Ragtime Band stamp logo">
+                </div>
+                
+                <div class="contactData">
                     <div class="inputGroup">
                         <label>Full Name:</label>
                         <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
@@ -76,6 +80,7 @@
                         <button onclick="return validateForm()">Send Message</button>
                         <span id="submit-error"></span>
                     </div>
+                </div>
 
             </form>
         </div>
