@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
     <title>Contact | Old Lou's Ragtime Band</title>
 </head>
 
@@ -43,7 +44,41 @@
     </header>
 
     <main>
-       CONTACT FORM/API HERE <!-- <img id="mainLogo" src="img/logo1.png" alt="Old Lou's Ragtime Band logo"> -->
+        <div id="overlay">
+            <form>
+                <h5>Contact Us!</h5>
+
+                    <div class="inputGroup">
+                        <label>Full Name:</label>
+                        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                        <span id="name-error"></span>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label>Phone Number:</label>
+                        <input type="text" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+                        <span id="phone-error"></span>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label>Email:</label>
+                        <input type="email" placeholder="Enter email" id="contact-email" onkeyup="validateEmail()">
+                        <span id="email-error"></span>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label>Message:</label>
+                        <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                        <span id="message-error"></span>
+                    </div>
+
+                    <div class="center">
+                        <button onclick="return validateForm()">Send Message</button>
+                        <span id="submit-error"></span>
+                    </div>
+
+            </form>
+        </div>
     </main>
 
     <footer class="footer">
