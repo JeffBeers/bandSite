@@ -135,7 +135,7 @@ window.onload = changeImg; //this runs the changeImg unction as soon as page loa
 
 //VIDEOS 
 
-/*
+
 fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCYfyw_5yG6dWNfMiWpMo3XA&maxResults=5&order=date&key=AIzaSyCPWe2EhTL0CIZ_JM5J2T8-iq1ktY3vi-w")
   .then((result)=>{
     return result.json()
@@ -150,7 +150,7 @@ fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=U
       `
     }
   })
-*/
+
 
   // COUNTDOWN
   const countdown = () => {
